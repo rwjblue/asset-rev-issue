@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AssetRevIssue</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/asset-rev-issue.css">
+  </head>
+  <body>
+    <script>
+      window.AssetRevIssueENV = {{ENV}};
+    </script>
+    <script src="assets/asset-rev-issue.js"></script>
+    <script>
+      window.AssetRevIssue = require('asset-rev-issue/app')['default'].create(AssetRevIssueENV.APP);
+    </script>
+  </body>
+</html>
